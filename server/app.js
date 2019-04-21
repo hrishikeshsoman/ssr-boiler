@@ -1,7 +1,7 @@
-const express = require("express");
+import express from "express";
+import appGetController from "./controllers/index.js";
 const app = express();
-const appGetController = require("./controllers/index.js")
 
 app.get('/', appGetController);
 
-module.exports = app;
+export default app;

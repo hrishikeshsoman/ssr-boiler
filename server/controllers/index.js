@@ -1,5 +1,3 @@
-function appGetController(req, res) {
+export default function(req, res) {
   res.send("Im from controller");
-};
-
-module.exports = appGetController;
+}
