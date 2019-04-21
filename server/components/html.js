@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import App from '../../client/app.js';
 
 export default class Html extends Component {
 
@@ -8,10 +9,11 @@ export default class Html extends Component {
         <head>
           <meta charSet="utf-8" />
           <title>React SSR!</title>
+          <script src="assets/client.bundle.js" />
         </head>
         <body>
           <div id="app">
-            <h1>Rendered in server!</h1>
+            <App />
           </div>
         </body>
       </html>
