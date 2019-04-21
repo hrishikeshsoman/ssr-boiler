@@ -1,3 +1,9 @@
+import React from "react";
+import { renderToString } from "react-dom/server";
+import Html from "../components/html.js"
+
 export default function(req, res) {
-  res.send("Im from controller");
+  const markup = renderToString(<Html />);
+
+  res.send(`<!DOCTYPE html>${markup}`);
 }
